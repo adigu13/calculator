@@ -1,0 +1,15 @@
+{
+  "name": "calculator",
+  "version": "1.0.0",
+  "description": "simple server for calculations",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start" : "node server"
+  },
+  "author": "Aditya Gupta",
+  "license": "ISC",
+  "dependencies": {
+    "hapi": "^17.8.5"
+  }
+}
