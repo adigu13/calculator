@@ -61,4 +61,20 @@ module.exports = function(server) {
             return data;
         }
     });
+    //Division route
+    server.route({
+        method: 'GET',
+        path: '/calculator/div/{num1}/{num2}',
+        handler: function (request, h) {
+
+            const num1 = parseInt(request.params.num1);
+            const num2 = parseInt(request.params.num2);
+
+            var data = {
+                answer: num1 / num2
+            };
+    
+            return data;
+        }
+    });
 }
