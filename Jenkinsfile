@@ -30,4 +30,7 @@ node {
             } 
                 echo "Trying to Push Docker Build to DockerHub"
     }
+    stage('Deploying image with rundeck'){
+        build job: 'calci'
+    }
 }
